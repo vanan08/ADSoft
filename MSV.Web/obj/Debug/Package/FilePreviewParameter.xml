@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="msv" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\nvan\\Documents\\GitHub\\net_cms2\\MSV\.Web\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\nvan\\Documents\\GitHub\\net_cms2\\MSV\.Web\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="NORTHWNDContext-Web.config Connection String" description="NORTHWNDContext Connection String used in web.config by the application to access the database." value="Data Source=VANAN-PC\SQLEXPRESS;Initial Catalog=northwind;persist security info=True;;User ID=sa;Password=1;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\nvan\\Documents\\GitHub\\net_cms2\\MSV\.Web\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NORTHWNDContext']/@connectionString" />
+  </parameter>
+</parameters>

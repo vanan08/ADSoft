@@ -1,0 +1,9 @@
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\EntityFramework.dll
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\EntityFramework.xml
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\ADSoft.Core.dll.config
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\ADSoft.Core.dll
+C:\Users\nvan\Documents\Lode\MSV.Core\bin\Debug\ADSoft.Core.pdb
+C:\Users\nvan\Documents\Lode\MSV.Core\obj\Debug\ADSoft.Core.dll
+C:\Users\nvan\Documents\Lode\MSV.Core\obj\Debug\ADSoft.Core.pdb
