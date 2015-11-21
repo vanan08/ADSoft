@@ -49,6 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Alphabetical_list_of_product.cs" />
+    <Compile Include="Models\Discuss.cs" />
+    <Compile Include="Models\ChatAccount.cs" />
+    <Compile Include="Models\Bank.cs" />
+    <Compile Include="Models\Mapping\DiscussMap.cs" />
+    <Compile Include="Models\Mapping\ChatAccountMap.cs" />
+    <Compile Include="Models\Mapping\BankMap.cs" />
+    <Compile Include="Models\Mapping\LotteryMap.cs" />
+    <Compile Include="Models\Lottery.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Category_Sales_for_1997.cs" />
     <Compile Include="Models\Client.cs" />

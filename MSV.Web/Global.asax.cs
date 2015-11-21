@@ -1,6 +1,9 @@
-﻿using StackExchange.Profiling;
+﻿using ADSoft.Web.Hubs;
+using StackExchange.Profiling;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -12,6 +15,7 @@ namespace ADSoft.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        string connString = ConfigurationManager.ConnectionStrings["NORTHWNDContext"].ConnectionString;
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -21,6 +25,14 @@ namespace ADSoft.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             RegisterMiniProfiler();
+            
+            //Start SqlDependency with application initialization
+            SqlDependency.Stop(connString);
+            SqlDependency.Start(connString);
+
+            //Register sqldependency
+            DiscussMessageRepository discussMessageRepository = new DiscussMessageRepository();
+            discussMessageRepository.RegisterDiscussMessages();
         }
 
         protected void Application_BeginRequest()
@@ -31,6 +43,14 @@ namespace ADSoft.Web
         protected void Application_EndRequest()
         {
             MiniProfiler.Stop();
+        }
+
+
+        protected void Application_End()
+        {
+            //MiniProfiler.Stop();
+            //Stop SQL dependency
+            SqlDependency.Stop(connString);
         }
 
         private void RegisterMiniProfiler()

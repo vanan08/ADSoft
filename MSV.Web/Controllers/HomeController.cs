@@ -7,7 +7,6 @@ using System.Web.Mvc;
 
 namespace ADSoft.Web.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()

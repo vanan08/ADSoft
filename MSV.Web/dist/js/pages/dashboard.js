@@ -114,15 +114,40 @@ $(function () {
     width: '80'
   });
 
-  var defaults = $.fn.datepicker.defaults = {
-      language: 'vi'
-  };
+  
   //The Calender
   //$("#calendar").datepicker();
   $('#calendar').datepicker({
-      language: "vi"
-  });
+      language: "vi",
+      todayHighlight: true
+  }).datepicker("setDate", "0")//Listen for the change even on the input
+  .change(dateChanged)
+  .on('changeDate', dateChanged);
 
+  
+
+  function dateChanged(ev) {
+      
+      //api/Lottery/GetLottery
+      var lottery = { LotteryDate: new Date(ev.date).toISOString() };
+      $.ajax({
+          url: '/api/Lottery/GetLottery',
+          type: 'post',
+          dataType: 'json',
+          success: function (data) {
+              if (data != null){
+                  $(".ketqua_net").html("<div>" + data.Html + "</div>");
+                  var db = $(".bor.f2.db").text();
+                  var _3number = db.substr(0, 3);
+                  var _2number = db.substr(3, 2);
+                  $(".bor.f2.db").html('<font size=11 >' + _3number + '<font size=12 color="red">' + _2number + '</font></font>');
+              } else {
+                  $(".ketqua_net").html("<div></div>");
+              }
+          },
+          data: lottery
+      });
+  }
 
   //SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box').slimScroll({

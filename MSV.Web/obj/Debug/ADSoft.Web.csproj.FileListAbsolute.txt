@@ -73,9 +73,12 @@ C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\ADSoft.Core.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Antlr3.Runtime.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\EntityFramework.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\HtmlAgilityPack.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.Security.Cookies.dll
@@ -105,9 +108,13 @@ C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\ADSoft.Core.pdb
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Antlr3.Runtime.pdb
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\EntityFramework.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\HtmlAgilityPack.pdb
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\HtmlAgilityPack.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\nvan\Documents\GitHub\ADSoft\MSV.Web\bin\Microsoft.Owin.Security.xml

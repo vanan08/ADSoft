@@ -1,0 +1,306 @@
+﻿
+    <!-- Main row -->
+    <div class="row" ng-controller="HomeController">
+    <!-- Left col -->
+    <section class="col-lg-7 connectedSortable">
+        <!-- Custom tabs (Charts with tabs)-->
+        <div class="nav-tabs-custom">
+
+            <div class="tab-content no-padding">
+                <div class="box" style="border-top:none">
+
+                    <!-- /.box-header -->
+                    <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div class="ketqua">
+                            <script id="nowplaying-script" src="http://ketqua.net/widget/xo-so-mien-bac.html" type="text/javascript"></script>
+                            <script type="text/javascript">
+                                displayWidget('20px', '#ffffff', '#00a65a', '#00a65a', '#ffffff', '#00a65a');
+                                $(".ketqua_net").hide();
+                            </script>
+                        </div>
+                        <style>
+                            .ketqua_net_lk {
+                                display: none;
+                            }
+
+                            .ketqua th {
+                                padding: 0px !important;
+                                text-align: center;
+                            }
+
+                            .ketqua {
+                                text-align: center;
+                                border-collapse: collapse;
+                                width: 100%;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+                            .ketqua_net_db {
+                                font-weight: bold;
+                                color: red;
+                            }
+
+                            .bor .f2 .db {
+                                color: red;
+                            }
+
+                            .ketqua_net {
+                                width: auto;
+                                background: #ffffff;
+                                font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+                                font-size: 19px !important;
+                            }
+                        </style>
+                    </div>
+
+
+                    <style>
+                        .ketqua_net_lk {
+                            display: none;
+                        }
+
+                        .ketqua th {
+                            padding: 5px;
+                        }
+                    </style>
+                    <!-- /.box-body -->
+
+                </div>
+
+            </div>
+        </div><!-- /.nav-tabs-custom -->
+        <!-- Chat box -->
+        <div class="box box-success">
+            <div class="box-header">
+                <i class="fa fa-comments-o"></i>
+                <h3 class="box-title">Thảo luận</h3>
+                <div class="box-tools pull-right" data-toggle="tooltip" title="Trạng thái">
+                    <div class="btn-group" data-toggle="btn-toggle">
+                        <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
+                        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body chat" id="chat-box">
+                <!-- chat item -->
+                <!--<div class="item">
+                    <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+                    <p class="message">
+                        <a href="#" class="name">
+                            <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                            Mike Doe
+                        </a>
+                        I would like to meet you to discuss the latest news about
+                        the arrival of the new theme. They say it is going to be one the
+                        best themes on the market
+                    </p>
+                    <div class="attachment">
+                        <h4>Attachments:</h4>
+                        <p class="filename">
+                            Theme-thumbnail-image.jpg
+                        </p>
+                        <div class="pull-right">
+                            <button class="btn btn-primary btn-sm btn-flat">Open</button>
+                        </div>
+                    </div>
+                </div>--><!-- /.item -->
+               
+            </div><!-- /.chat -->
+            <div class="box-footer">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Type message...">
+                    <div class="input-group-btn">
+                        <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.box (chat box) -->
+        <!-- quick email widget -->
+        <div class="box box-info">
+            <div class="box-header">
+                <i class="fa fa-envelope"></i>
+                <h3 class="box-title">Gửi thư nhanh</h3>
+                <!-- tools box -->
+                <div class="pull-right box-tools">
+                    <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                </div><!-- /. tools -->
+            </div>
+            <div class="box-body">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="emailto" placeholder="Địa chỉ email của người nhận:">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Tiêu đề thư">
+                    </div>
+                    <div>
+                        <textarea class="textarea" placeholder="Nội dung thư" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="box-footer clearfix" style="text-align:center">
+                <button class="btn btn-default" id="sendEmail">Gửi <i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+        </div>
+    </section><!-- /.Left col -->
+    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+    <section class="col-lg-5 connectedSortable">
+
+        <!-- Calendar -->
+        <div class="box box-solid bg-green-gradient">
+            <div class="box-header">
+                <i class="fa fa-calendar"></i>
+                <h3 class="box-title">Lịch</h3>
+
+            </div><!-- /.box-header -->
+            <div class="box-body no-padding">
+                <!--The calendar -->
+                <div id="calendar" style="width: 100%"></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+        <!-- Bank -->
+        <div class="box box-solid bg-green-gradient">
+            <div class="box-header">
+                <i class="fa fa-university"></i>
+                <h3 class="box-title">Ngân hàng hỗ trợ</h3>
+
+            </div><!-- /.box-header -->
+            <div class="box-body no-padding">
+                <div class="sub">
+                    <h4>Các ngân hàng hỗ trợ</h4>
+                    <p>ADOnline sử dụng tài khoản ngân hàng trung gian, đảm bảo tính hợp pháp của dòng tiền 100%.</p> <h5>
+                        Rút nạp cực nhanh 2 phút, thủ tục đơn giản 1 bước. Chúng tôi có tài khoản ngân hàng riêng tư cho khách có nhu cầu.
+                    </h5>
+                    <ul class="listBanks" data-columns="2" >
+                        <li ng-repeat="bank in banks">
+                            <img title="{{bank.Ten}}" width="127" ng-src="{{bank.Logo}}">
+                            <h6>CTK: <strong>{{bank.CTK}}</strong></h6>
+                            <h6>STK: <strong>{{bank.STK}}</strong></h6>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+        <!-- Bank -->
+        <div class="box box-solid bg-green-gradient">
+            <div class="box-header">
+                <i class="fa fa-phone-square"></i>
+                <h3 class="box-title">Liên hệ (0945-543-432)</h3>
+
+            </div><!-- /.box-header -->
+            <div class="box-body no-padding">
+                <div class="sub">
+                    <ul class="listBanks" data-columns="2">
+
+                        <li ng-repeat="nickName in NickNames">
+                            <img ng-src="{{nickName.Logo}}">
+                            <h6><strong>{{nickName.NickName}}</strong></h6>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section><!-- right col -->
+</div><!-- /.row (main row) -->
+<!--SignalR script to update the chat page and send messages.-->
+<script>
+    $(function () {
+        var timer = $.timer(function () {
+            var hours = new Date().getHours();
+            if (hours >= 6 && hours <= 7) {
+                lotteryHub.server.sendLotteryResult("request", "getlottery");
+            }
+        });
+
+        // Reference the auto-generated proxy for the hub.
+        var lotteryHub = $.connection.lotteryResultHub;
+        // Create a function that the hub can call back to display messages.
+        lotteryHub.client.ClientUpdateLotteryResult = function (name, message) {
+            $(".ketqua_net").html("<div>" + message + "</div>");
+            $(".ketqua_net").show();
+            var mvar = 0;
+            $(".bo9").each(function () {
+                console.log("nvan");
+                if (mvar == 1) $(this).hide();
+                mvar++;
+            });
+            $(".last").hide();
+            var db = $(".bor.f2.db").text();
+            var _3number = db.substr(0, 3);
+            var _2number = db.substr(3, 2);
+            $(".bor.f2.db").html('<font size=11 >' + _3number + '<font size=12 color="red">' + _2number + '</font></font>');
+            console.log($(".bor.f2.db").text());
+        };
+
+        lotteryHub.client.ClientUpdateDiscussMessage = function (username, avatar, message, createdDate) {
+            console.log("username: " + username);
+            console.log("message: " + message);
+            console.log("avatar: " + avatar);
+            var message = "<div class=\"item\">"+
+                              "<img src=\"dist/img/user4-128x128.jpg\" alt=\"user image\" class=\"online\">"+
+                                 "<p class=\"message\">"+
+                                      '<a href="#" class="name">'+
+                                          '<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> ' + createdDate + '</small>' +
+                                                username+
+                                            '</a>'+message+
+                            '</p>'+
+                        '</div><!-- /.item -->';
+            $('#chat-box').append(message);
+        }
+
+        $.connection.hub.stateChanged(function (change) {
+            console.log('SignalR state changed from: ' + change.oldState + " to: " + change.newState);
+            if (change.newState == 4) {
+                timer.stop();
+            } else {
+               // timer.set({ time: 1000, autostart: true });
+            }
+        });
+
+        $.connection.hub.disconnected(function () {
+            timer.stop();
+            window.console.log("$.connection.hub.state: " + $.connection.hub.state);
+        });
+
+        // Start the connection.
+        $.connection.hub.start().done(function () {
+            // Call the Send method on the hub.
+            lotteryHub.server.sendLotteryResult("request", "getlottery");
+            //sgetLottery();
+        });
+
+        var getLottery = function () {
+            timer.set({ time: 1000, autostart: true });
+        };
+
+
+        $.get("/api/Lottery/GetDiscussMessage", function (data, status) {
+            var message = "";
+            $.each(data, function (index, value) {
+                message += "<div class=\"item\">" +
+                               "<img src=\"dist/img/user4-128x128.jpg\" alt=\"user image\" class=\"online\">" +
+                                  "<p class=\"message\">" +
+                                       '<a href="#" class="name">' +
+                                           '<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> ' + value.CreatedDate + '</small>' +
+                                                 value.Username +
+                                             '</a>' + value.Message +
+                             '</p>' +
+                         '</div><!-- /.item -->';
+            });
+            
+            $('#chat-box').append(message);
+        });
+
+        var sendDiscussMessage = function (message) {
+
+            $.post("test.php", { name: "John", time: "2pm" })
+              .done(function (data) {
+                  alert("Data Loaded: " + data);
+              });
+        };
+    });
+</script>

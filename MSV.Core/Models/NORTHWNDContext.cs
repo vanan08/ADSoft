@@ -47,6 +47,10 @@ namespace ADSoft.Core.Models
         public DbSet<Client> Clients { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
 
+        public DbSet<Lottery> Lotteries { get; set; }
+        public DbSet<Bank> Banks { get; set; }
+        public DbSet<ChatAccount> ChatAccounts { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CategoryMap());
@@ -76,6 +80,11 @@ namespace ADSoft.Core.Models
             modelBuilder.Configurations.Add(new Sales_Totals_by_AmountMap());
             modelBuilder.Configurations.Add(new Summary_of_Sales_by_QuarterMap());
             modelBuilder.Configurations.Add(new Summary_of_Sales_by_YearMap());
+
+            modelBuilder.Configurations.Add(new LotteryMap());
+            modelBuilder.Configurations.Add(new BankMap());
+            modelBuilder.Configurations.Add(new ChatAccountMap());
+            modelBuilder.Configurations.Add(new DiscussMap());
         }
     }
 }
